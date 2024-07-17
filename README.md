@@ -21,7 +21,7 @@
 
 2. Run the script
 ```
-python search_string.py
+python search_for_string.py
 ```
 
 3. Follow the Prompts:
@@ -39,7 +39,6 @@ Found 'Hello world' in file: C:\Users\username\Desktop\projects\my-app\index.htm
 Found 'Hello world' in file: C:\Users\username\Desktop\projects\my-app\script.js on line 1
 Found 'Hello world' in file: C:\Users\username\Desktop\projects\my-app\style.css on line 7
 ```
-
 ### Python:
 ```
 import os

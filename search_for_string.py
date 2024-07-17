@@ -9,9 +9,11 @@ def search_string_in_file(file_path, search_string):
 
 def search_string_in_directory(directory, search_string):
     for root, dirs, files in os.walk(directory):
-        # Exclude node_modules directory
+        # Exclude node_modules directory to search through as it's usually massive
         if 'node_modules' in dirs:
             dirs.remove('node_modules')
+        if 'package-lock.json' in dirs:
+            dirs.remove('package-lock.json')
         for file in files:
             if file.endswith(('.js', '.jsx', '.ts', '.tsx', '.html', '.css', '.json', '.txt', '.py',)):  # Add other file extensions if needed
                 file_path = os.path.join(root, file)
